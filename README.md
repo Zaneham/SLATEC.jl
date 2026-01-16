@@ -32,7 +32,7 @@ The original SLATEC authors validated their code against Abramowitz & Stegun and
 
 It's not enough now.
 
-The four-level test framework in [slatec-modern](https://github.com/Zaneham/slatec-modern) asks whether the code works, whether it matches mathematical truth, whether it matches IBM 360 historical output, and whether it survives hostile compiler flags. Most routines pass. Some don't. J₀(500) returns the wrong sign, which is the sort of thing you'd rather know before your spacecraft misses Mars.
+The four-level test framework in [slatec-modern](https://github.com/Zaneham/slatec) asks whether the code works, whether it matches mathematical truth, whether it matches IBM 360 historical output, and whether it survives hostile compiler flags. Most routines pass. Some don't. J₀(500) returns the wrong sign, which is the sort of thing you'd rather know before your spacecraft misses Mars.
 
 If a routine doesn't pass all four levels, it doesn't get ported. There's no shame in admitting failure. The shame would be in shipping it anyway.
 
