@@ -43,14 +43,20 @@ If a routine doesn't pass all four levels, it doesn't get ported. There's no sha
 | **L3** | Does the output match IBM 360 historical values? |
 | **L4** | Does the output survive hostile compiler flags? |
 
+### How Julia Validation Works
+
+The Fortran code in slatec-modern has been validated against IBM 360 hardware, mathematical references, and hostile compiler flags. Running Julia on a 1966 mainframe would be impressive but impractical.
+
+Instead, the Julia tests verify that output matches the validated Fortran. If Fortran passed L1-L4, and Julia matches Fortran, then Julia inherits the validation. The hard work was done once; the Julia port piggybacks on it.
+
 ## Current Status
 
-| Module | Routines | Ported | Tested |
-|--------|----------|--------|--------|
-| BLAS | DAXPY, DSCAL, DCOPY, DSWAP, DROT, DROTG | In Progress | — |
-| MINPACK | DENORM, ENORM | In Progress | — |
-| LINPACK | DGEFA, DGESL, DPOFA, DPOSL | Planned | — |
-| Special Functions | Bessel, Gamma, Airy, Elliptic | Planned | — |
+| Module | Routines | Status |
+|--------|----------|--------|
+| BLAS | DAXPY, DSCAL, DCOPY, DSWAP, DROT, DROTG | Pass |
+| MINPACK | DENORM, ENORM | Pass |
+| LINPACK | DGEFA, DGESL, DPOFA, DPOSL | Planned |
+| Special Functions | Bessel, Gamma, Airy, Elliptic | Planned |
 
 ## Installation
 
