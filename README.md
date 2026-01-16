@@ -82,7 +82,7 @@ Every routine in this package exists because:
 3. The code produces identical output to IBM 360/370 mainframes from the 1980s
 4. The implementation survives adversarial compiler optimisations
 
-Routines with known accuracy failures are documented but not ported. See [slatec-modern](https://github.com/Zaneham/slatec-modern) for the four-level test framework and deviation analysis.
+Routines with known accuracy failures are documented but not ported. See [slatec-modern](https://github.com/Zaneham/slatec) for the four-level test framework and deviation analysis.
 
 ## Contact
 
